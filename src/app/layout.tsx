@@ -5,9 +5,19 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: {
     template: '%s | devstore',
     default: 'devstore',
+  },
+  openGraph: {
+    title: 'Devstore',
+    description: 'Devstore',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Devstore',
+    description: 'Devstore',
   },
 }
 
