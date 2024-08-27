@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevStore
 
-## Getting Started
+DevStore é uma aplicação de e-commerce desenvolvida com [Next.js](https://nextjs.org/) e [TypeScript](https://www.typescriptlang.org/). Este projeto oferece funcionalidades de busca de produtos e adição de itens ao carrinho de compras.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- **Next.js** - Framework React para desenvolvimento de aplicações web server-side rendering (SSR) e static site generation (SSG).
+- **TypeScript** - Superset de JavaScript que adiciona tipagem estática ao código.
+- **Cypress** - Framework de testes end-to-end que facilita a automação de testes.
+
+## Requisitos
+
+Antes de começar, certifique-se de ter o Node.js e ppm instalados na sua máquina.
+
+- [Node.js](https://nodejs.org/) (versão 12 ou superior)
+- [pnpm](https://pnpm.io/pt/) (gerenciador de pacotes utilizado no projeto)
+
+## Instalação
+
+Clone o repositório e instale as dependências do projeto.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/devstore.git
+cd devstore
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para rodar o projeto em ambiente de desenvolvimento, utilize o seguinte comando:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+pnpm run dev
+```
 
-## Learn More
+O aplicativo estará disponível em http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
+## Construindo para Produção
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para construir a aplicação para produção, use o comando:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+pnpm run build
 
-## Deploy on Vercel
+&
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+pnpm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Testes End-to-End com Cypress
+
+Configuração do Cypress
+
+Primeiro, você precisa instalar as dependências do Cypress:
+
+```bash
+pnpm install cypress --save-dev
+```
+
+Executando os Testes
+
+```bash
+pnpm cypress open
+
+& 
+
+pnpm cypress run
+```
